@@ -1,0 +1,146 @@
+@import url('https://fonts.cdnfonts.com/css/valorant');
+@import url('http://fonts.cdnfonts.com/css/valorant?styles=64778');
+                
+
+:root {
+    --valorant: 'VALORANT', sans-serif;
+    --spacing: 2vh 0;
+    --centre: 0 auto;
+}
+
+body {
+    background-color: black;
+}
+
+.header {
+    display: none;
+    width: 100%;
+    height: 5vh;
+    padding: var(--spacing);
+    text-align: center;
+    font-family: var(--valorant);
+    font-size: 4vw;
+    font-weight: 500;
+    color: red;
+}
+
+.page-title {
+    font: var(--valorant);
+}
+
+.armory {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 75vh;
+    width: 75vw;
+    padding: var(--spacing);
+    margin: var(--centre);
+    font-family: var(--valorant);
+    font-size: 2vw;
+    font-weight: 400;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.column, .half {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column {
+    height: 100%;
+    width: 19%;
+}
+
+.column .gun-title {height: 8%;}
+
+.half .gun-title {height: 16.6%;}
+
+.half {height: 48%;}
+
+.col1 .weapon {height: 17%;}
+
+.col2 .weapon {height: 45%;}
+
+.col3 .weapon {height: 22%;}
+
+.col4 .weapon {height: 100%;}
+
+
+.gun-title {
+    height: 16%;
+    background-color: cadetblue;
+    color: white;
+}
+
+.weapons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.col2 .weapons {
+    height: 79.25%;
+}
+
+.weapon, .gun-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.weapon span, .gun-title span {
+    width: 100%;
+    text-align: center;
+}
+
+.weapon{background-color: aqua;}
+
+.incomplete {background-color: red;}
+
+.complete {
+    background-color: greenyellow;
+    box-shadow: 0 0 2% 0 greenyellow;
+}
+
+.rounds {
+    display: grid;
+    grid-template-columns: repeat(12, 7vw);
+    gap: 0.5vw;
+    width: 90%;
+    height: 20vh;
+    margin: var(--centre);
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: var(--valorant);
+    font-size: 1vw;
+    width: 100%;
+}
+
+.round-title {
+    text-align: center;
+    width: 100%;
+}
+
+.weapon-list {width: 100%;}
+
+.add-weapon {
+    width: 100%;
+    text-align: center;
+}
+
+.add-round {
+    color: white;
+    font-family: var(--valorant);
+    font-size: 1vw;
+    cursor: pointer;
+}
